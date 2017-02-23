@@ -1,4 +1,8 @@
-def find_subsequence(seq):
+# coding=utf-8
+
+
+def find_all(seq):
+    """ 查找子序列. """
     res = []
     seq_len = len(seq)
     for i in range(seq_len):
@@ -7,4 +11,3 @@ def find_subsequence(seq):
             res.append(seq[j:j + sub_seq_len])
 
     return res
-
