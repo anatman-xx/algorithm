@@ -1,6 +1,3 @@
-# coding=utf-8
-
-
 def insertion_sort(seq):
     """ 插入排序 """
     for j in range(1, len(seq)):

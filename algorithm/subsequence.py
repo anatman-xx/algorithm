@@ -1,6 +1,3 @@
-# coding=utf-8
-
-
 def find_all(seq):
     """ 查找子序列. """
     res = []
