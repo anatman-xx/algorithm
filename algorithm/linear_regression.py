@@ -2,7 +2,6 @@
 from io import StringIO
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from sklearn import linear_model
 
@@ -14,8 +13,8 @@ df = pd.read_csv(StringIO(csv_data))
 regr = linear_model.LinearRegression()
 regr.fit(df['square_feet'].values.reshape(-1, 1), df['price'])
 
-#%%
-a, b = regr.coef_, regr.intercept_
+# regr.coef_ - 斜率
+# regr.intercept_ - 截距
 
 #%%
 plt.scatter(df['square_feet'], df['price'])
