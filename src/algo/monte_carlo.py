@@ -2,7 +2,7 @@ import random
 import matplotlib.pyplot as plt
 
 
-def monte_carlo_flip_coin(n):
+def flip_coin_tail_prob(iter_num):
     def flip_coin():
         """
         抛硬币
@@ -13,7 +13,7 @@ def monte_carlo_flip_coin(n):
 
     tail_prob_val_list = list()
     tail_results = 0
-    for i in range(n):
+    for i in range(iter_num):
         tail_results += flip_coin()
         tail_prob_val = tail_results / (i + 1)
         tail_prob_val_list.append(tail_prob_val)
@@ -28,4 +28,4 @@ def monte_carlo_flip_coin(n):
 
 
 if __name__ == '__main__':
-    monte_carlo_flip_coin(5000)
+    flip_coin_tail_prob(5000)
