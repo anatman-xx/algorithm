@@ -21,11 +21,11 @@ def flip_coin_tail_prob(iter_num):
     # 绘图
     plt.axhline(y=0.5, color='r', linestyle='-')
     plt.title('flip coin tail probability')
-    plt.xlabel('iterations') # 迭代次数
-    plt.ylabel('probability') # 概率
+    plt.xlabel('iterations')  # 迭代次数
+    plt.ylabel('probability')  # 概率
     plt.plot(tail_prob_val_list)
     plt.show()
 
 
 if __name__ == '__main__':
-    flip_coin_tail_prob(5000)
+    flip_coin_tail_prob(50000)
